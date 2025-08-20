@@ -28,5 +28,5 @@ add_executable(${PROJECT_NAME}
     src/Field.cpp
 )
 
-target_link_libraries(${PROJECT_NAME} PUBLIC -lstatic-raylib -L"${RAYLIB_PATH}")
+target_link_libraries(${PROJECT_NAME} PUBLIC -lraylib -L"${RAYLIB_PATH}")
 file(COPY ${CMAKE_SOURCE_DIR}/resources DESTINATION ${CMAKE_BINARY_DIR})
